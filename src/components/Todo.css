@@ -1,0 +1,131 @@
+.background {
+  background: url("./../assets/background.png"),
+    lightgray 0px 0px / 100% 100% no-repeat;
+  height: 300px;
+  width: 100%;
+  background-position-y: -325px;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(225deg, #5596ff 0%, #ac2deb 100%);
+  z-index: 1;
+  height: 300px;
+  opacity: 0.6;
+}
+
+.todoContainer {
+  position: relative;
+  z-index: 2 !important;
+  width: 540px;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 70px;
+  overflow-x: hidden;
+}
+.mainHeading {
+  color: #fff;
+  font-family: Josefin Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 15px;
+  margin-bottom: 48px;
+}
+.todoItem {
+  width: 540px;
+  height: 64px;
+  background-color: #fff;
+  display: flex;
+  padding: 20px 24px;
+  gap: 24px;
+  background: #fff;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+  align-items: center;
+}
+.todoItem input {
+  outline: none;
+  border-width: 0;
+  width: 100%;
+  color: #9495a5;
+  font-family: Josefin Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
+.newTodoInput {
+  border-radius: 5px;
+  margin-bottom: 24px;
+}
+.completed .todoItemText {
+  color: #d1d2da;
+  font-family: Josefin Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  text-decoration: line-through;
+}
+.listItem {
+  border-bottom: 1px solid #e3e4f1;
+}
+.todoList {
+  border-radius: 5px;
+}
+.deleteIcon {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkBoxContainer > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filterButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 16px 24px 20px 24px;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+  width: 100%;
+}
+.filterButtons button {
+  all: unset;
+}
+.filterButtons > * {
+  color: #9495a5;
+  font-family: Josefin Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.194px;
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+}
+.activeClass {
+  color: #3a7cfd !important;
+}
+.clearCompletedButton,
+button,
+svg {
+  cursor: pointer !important;
+}
